@@ -1,1 +1,1 @@
-web: gunicorn jenkins:jenkins
+web: gunicorn -w 4 jenkins:app
