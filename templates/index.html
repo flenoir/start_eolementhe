@@ -1,0 +1,58 @@
+<html>
+    <head>{{ pure.css }}</head>
+    <body>
+
+{% extends "pure/layout.html" %}
+{% block title %}Hello world from flask-pure{% endblock %}
+
+{% block nav %}
+<div class="pure-menu pure-menu-horizontal">
+  <!-- ... -->
+</div>
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .pure-form {
+    margin-top: 80px;
+    text-align:center
+    }
+    h1,h2{
+    text-align:center
+    }
+</style>
+
+
+<div class="pure-g">
+        <div class="pure-u-1-5"><p></p></div>
+        <div class="pure-u-3-5">
+                <h1>Welcome to Eolementhe.net Starter</h1>
+
+                {% if status == False %}
+                    <h2>Eolementhe.net est <span style="color: red">arreté</span></h2>
+                {% else %}
+                    <h2>Eolementhe.net est <span style="color: green">demarré</span></h2>
+                {% endif %}
+                
+                <p>    
+                    <form class="pure-form" action = "http://localhost:5000/" method = "POST">
+                        <p>Select Start OR Stop            <SELECT name="eolementhenet" size="1"></p>
+                        <OPTION></OPTION>
+                        <OPTION value="start_eolementhe_net">Start</OPTION>
+                        <OPTION value="stop_eolementhe_net">Stop</OPTION>
+                        </SELECT>  
+                        <button class="pure-button pure-button-primary" type = "submit" value = "submit" />Submit</button>
+                        </form>
+                </p>
+
+        </div>
+        <div class="pure-u-1-5"><p></p></div>
+    </div>
+
+
+
+{% endblock %}
+</body>
+</html>
+
