@@ -14,10 +14,10 @@ Pure(app)
 def index():
     status = True
     try:
-        hostname = "https://www.eolementhe.net"
-        response = urllib.request.urlopen(hostname).getcode()
+        hostname = "https://www.eolementhe.cloud"
+        response = urllib.request.urlopen(hostname, timeout = 25).getcode()
         
-        print(urllib.request.urlopen(hostname).getcode())
+        # print(urllib.request.urlopen(hostname).getcode())
         status = True
     except:
         print("none")
