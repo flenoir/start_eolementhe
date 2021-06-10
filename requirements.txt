@@ -12,7 +12,7 @@ cycler==0.10.0
 decorator==4.1.2
 defusedxml==0.5.0
 dirsync==2.2.2
-Django==1.10
+Django==2.2.24
 dominate==2.3.1
 entrypoints==0.2.3
 ffmpeg-python==0.1.9
